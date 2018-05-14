@@ -1,6 +1,8 @@
 #ifndef PID_H
 #define PID_H
 
+#include <iostream>
+
 class PID {
 public:
   /*
@@ -16,6 +18,9 @@ public:
   double Kp;
   double Ki;
   double Kd;
+    double e_d;
+    double e_p;
+    double e_i;
 
   /*
   * Constructor
